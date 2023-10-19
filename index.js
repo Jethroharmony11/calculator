@@ -31,8 +31,8 @@ addbutton.onclick = onClickAdd;
 subtractbutton.onclick = onClickSubtraction;
 multiplybutton.onclick = onClickMultiply;
 dividebutton.onclick = onClickDivide;
-window.Function.onclick = ()=> document.body.style.background=`
-rgb(${Math.random()*255}), ${Math.random9*255}, ${Math.random()*255}`
+window.fun.onclick = ()=> document.body.style.backgroundColor=`
+rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
 
 }
 window.onload=init;
