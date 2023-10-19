@@ -1,37 +1,38 @@
 function init(){
     const number1field =document.getElementById("number1field")
     const number2field =document.getElementById("number2field")
-    const addbuttaon =document.getElementById("ddbuttaon")
+    const addbutton =document.getElementById("addbutton")
     const subtractbutton =document.getElementById("subtractbutton")
     const multiplybutton =document.getElementById("multiplybutton")
     const dividebutton =document.getElementById("dividebutton")
-    const answer1field=document.getElementById("answer1field")
+    const answerfield=document.getElementById("answerfield")
 
-    function onClichAdd(){
+    function onClickAdd(){
         const number1 = Number(number1field.value)
         const number2 = Number(number2field.value)
-        answer1field.value =number1 + number2field;
+        answerfield.value =number1 + number2;
     }
-    function onClichsubtraction(){
+    function onClickSubtraction(){
         const number1 = Number(number1field.value)
         const number2 = Number(number2field.value)
-        answer1field.value =number1 - number2field;
+        answerfield.value =number1 - number2;
     }
-    function onClichmultiply(){
+    function onClickMultiply(){
         const number1 = Number(number1field.value)
         const number2 = Number(number2field.value)
-        answer1field.value =number1 * number2field;
+        answerfield.value =number1 * number2;
     }
-    function onClichAdd(){
+    function onClickDivide(){
         const number1 = Number(number1field.value)
         const number2 = Number(number2field.value)
-        answer1field.value =number1 / number2field;   
+        answerfield.value =number1 / number2;   
 }
-addButton.onclick = onClickAdd;
-subtractbutton.onclick = onClicksubtract;
+addbutton.onclick = onClickAdd;
+subtractbutton.onclick = onClickSubtraction;
 multiplybutton.onclick = onClickMultiply;
 dividebutton.onclick = onClickDivide;
 window.Function.onclick = ()=> document.body.style.background=`
-rgb(${Math.random()*255}), ${Math.random9*255}, ${Math.random()*255}
+rgb(${Math.random()*255}), ${Math.random9*255}, ${Math.random()*255}`
 
 }
+window.onload=init;
